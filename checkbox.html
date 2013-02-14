@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://webdesign.maratz.com/lab/fancy-checkboxes-and-radio-buttons/jquery.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Custom designed fancy check boxes and radio buttons with CSS and jQuery</title>
+    <meta name="Description" content="Custom designed HTML checkboxes and radio controls with CSS 3.0 and jQuery.">
+    <link rel="stylesheet" type="text/css" href="./checkbox_files/checkTick.css">
+</head>
+<body>
+<div id="sizer">
+    <form action="" method="get" accept-charset="utf-8">
+
+        <fieldset class="checkboxes">
+            <label for="checkbox-01"><input name="sample-checkbox-01" id="checkbox-01" value="1" type="checkbox" checked=""> I agree to the terms &amp; conditions.</label>
+            <label for="checkbox-02"><input name="sample-checkbox-02" id="checkbox-02" value="1" type="checkbox"> Please send me regular updates.</label>
+        </fieldset>
+
+        <fieldset class="radios">
+            <label class="" for="radio-04"><input name="sample-radio" id="radio-04" value="1" type="radio" checked=""> This is option A...</label>
+            <label class="" for="radio-02"><input name="sample-radio" id="radio-02" value="1" type="radio"> and this is option B...</label>
+            <label class="" for="radio-03"><input name="sample-radio" id="radio-03" value="1" type="radio"> or simply choose option C</label>
+        </fieldset>
+    </form>
+</div>
+
+<script src="./checkbox_files/jquery.min.js"></script>
+<script src="./checkbox_files/checkTick.js"></script>
+
+<script type="text/javascript">
+
+    $('.checkboxes').checktick({ style : 'checked'});
+    $('.radios').checktick({ style : 'radio' });
+
+</script>
+<script>
+  
+    $(document).ready(function(){
+       
+
+    });
+</script>
+
+
+
+</body></html>
